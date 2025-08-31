@@ -18,9 +18,15 @@ public class Company {
         companyName = name;
     }
 
-    String getCompanyName() {
+    static String getCompanyName() {
         return companyName;
     }
 
-
+    @Override
+    public String toString() {
+        return "Company{" +
+                "employeeID=" + employeeID +
+                ", employeeName='" + employeeName + '\'' +
+                '}';
+    }
 }

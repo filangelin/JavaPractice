@@ -35,4 +35,12 @@ public class Person {
         System.out.println("Имя: " + firstName + " Фамилия: " + lastName + " SSN: " + ssn);
     }
 
+    @Override
+    public String toString() {
+        return "Person{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", ssn='" + ssn + '\'' +
+                '}';
+    }
 }

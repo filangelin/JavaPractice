@@ -22,4 +22,11 @@ public class University {
         System.out.println("Имя = " + studentName + " Id = " + studentID + " Университет = " + universityName);
     }
 
+    @Override
+    public String toString() {
+        return "University{" +
+                "studentID=" + studentID +
+                ", studentName='" + studentName + '\'' +
+                '}';
+    }
 }

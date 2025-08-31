@@ -38,4 +38,13 @@ public class Library {
         return category;
     }
 
+    @Override
+    public String toString() {
+        return "Library{" +
+                "bookTitle='" + bookTitle + '\'' +
+                ", author='" + author + '\'' +
+                ", year=" + year +
+                ", category='" + category + '\'' +
+                '}';
+    }
 }

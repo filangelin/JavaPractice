@@ -24,4 +24,11 @@ public class GameSettings {
         System.out.println("Игра - " + gameName + " Max кол-во игроков = " + maxPlayers + " Текущее кол-во игроков - " + currentPlayers);
     }
 
+    @Override
+    public String toString() {
+        return "GameSettings{" +
+                "gameName='" + gameName + '\'' +
+                ", currentPlayers=" + currentPlayers +
+                '}';
+    }
 }
