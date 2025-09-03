@@ -1,3 +1,5 @@
+package practice1;
+
 class MathOperations {
 
     public static void main(String[] args) {
