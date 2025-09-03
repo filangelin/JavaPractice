@@ -38,7 +38,7 @@ public class ForTasksSolver {
     static void isPrimeNumber() {
         int number = scanner.nextInt();
         boolean isPrime = true;
-        for (int i = 2; i < number - 1; i++) {
+        for (int i = 2; i < number; i++) {
             if (number % i == 0) {
                 isPrime = false;
                 break;

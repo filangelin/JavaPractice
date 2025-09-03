@@ -6,6 +6,7 @@ public class SwitchTasksSolver {
     static Scanner scanner = new Scanner(System.in);
 
     static void printDayOfWeek() {
+        System.out.println("Введите номер дня:");
         int day = scanner.nextInt();
         String dayOfWeek = switch (day) {
             case 1 -> "Понедельник";
@@ -48,7 +49,7 @@ public class SwitchTasksSolver {
     }
 
     static void makeTextCommand() {
-        String command = scanner.next();
+        String command = scanner.nextLine();
         String commandDefinition = switch (command) {
             case "start" -> "Система запущена";
             case "stop" -> "Система остановлена";

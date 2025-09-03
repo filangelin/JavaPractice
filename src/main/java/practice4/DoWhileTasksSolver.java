@@ -42,7 +42,7 @@ public class DoWhileTasksSolver {
         String input;
         do {
             System.out.println("Введите команду");
-            input = scanner.next();
+            input = scanner.nextLine();
         } while (!"exit".equals(input));
     }
 
