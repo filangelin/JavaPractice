@@ -26,7 +26,7 @@ public class HashSetTasks {
 
     }
 
-    public static Set uniqElements(List elements) {
+    public static Set uniqElements(List<Integer> elements) {
         return new HashSet<>(elements);
     }
 

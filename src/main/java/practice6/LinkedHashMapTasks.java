@@ -11,6 +11,6 @@ public class LinkedHashMapTasks {
         contacts.put("Petr", "78003456782");
 
         System.out.println("Все контакты " + contacts);
-        System.out.println("Поиск контакта Анна - " + contacts.get("Anna"));
+        System.out.println("Поиск контакта Анна - " + contacts.getOrDefault("Anna", null));
     }
 }

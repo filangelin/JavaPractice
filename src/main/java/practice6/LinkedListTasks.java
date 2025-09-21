@@ -32,7 +32,7 @@ public class LinkedListTasks {
         }
 
         System.out.println("\nДругой способ:");
-        ListIterator iter = numbers.listIterator();
+        ListIterator<Integer> iter = numbers.listIterator();
         while (iter.hasNext()) {
             System.out.println(iter.next());
         }
