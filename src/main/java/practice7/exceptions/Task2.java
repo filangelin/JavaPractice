@@ -5,7 +5,7 @@ public class Task2 {
         try {
             System.out.println(a / b);
         } catch (ArithmeticException e) {
-            System.out.println("Деление на 0 нвозмоэно");
+            System.out.println("Деление на 0 невозможно");
         }
     }
 
