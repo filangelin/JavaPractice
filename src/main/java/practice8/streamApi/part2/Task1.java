@@ -6,7 +6,7 @@ import java.util.stream.Collectors;
 
 public class Task1 {
     public static void main(String[] args) {
-        ArrayList<String> strings = new ArrayList<>(List.of("one", "two", "three", "seven", "eighteen"));
+        List<String> strings = new ArrayList<>(List.of("one", "two", "three", "seven", "eighteen"));
 
         List stringsMoreFive = strings.stream()
                 .filter(n -> n.length() > 5)

@@ -6,7 +6,7 @@ import java.util.stream.Collectors;
 
 public class Task5 {
     public static void main(String[] args) {
-        ArrayList<Integer> numbers = new ArrayList<>(List.of(1, 2, 2, 7, 10, 10, 15));
+        List<Integer> numbers = new ArrayList<>(List.of(1, 2, 2, 7, 10, 10, 15));
 
         List uniqNumbers = numbers.stream()
                 .distinct()

@@ -6,7 +6,7 @@ import java.util.stream.Collectors;
 
 public class Task3 {
     public static void main(String[] args) {
-        ArrayList<String> strings = new ArrayList<>(List.of("one", "two", "three", "seven", "eighteen"));
+        List<String> strings = new ArrayList<>(List.of("one", "two", "three", "seven", "eighteen"));
 
         List stringsLengts = strings.stream()
                 .map(n -> n.length())

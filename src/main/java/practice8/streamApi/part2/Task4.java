@@ -6,7 +6,7 @@ import java.util.stream.Collectors;
 
 public class Task4 {
     public static void main(String[] args) {
-        ArrayList<Integer> numbers = new ArrayList<>(List.of(16, 2, 5, 7, 10, 13, 15));
+        List<Integer> numbers = new ArrayList<>(List.of(16, 2, 5, 7, 10, 13, 15));
 
         List numbersSquared = numbers.stream()
                 .map(n -> n * n)
