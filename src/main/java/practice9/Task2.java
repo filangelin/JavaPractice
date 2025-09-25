@@ -1,7 +1,7 @@
 package practice9;
 
 public class Task2 {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         Runnable printA = () -> {
             for (int i = 0; i < 5; i++) {
                 System.out.println("A");
@@ -29,5 +29,8 @@ public class Task2 {
 
         thread1.start();
         thread2.start();
+
+        thread1.join();
+        thread2.join();
     }
 }

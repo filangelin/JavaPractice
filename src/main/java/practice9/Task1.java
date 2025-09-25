@@ -1,7 +1,7 @@
 package practice9;
 
 public class Task1 {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         Thread thread = new Thread(() -> {
             for (int i=0; i<5; i++) {
                 System.out.println("Привет из потока!");
@@ -14,5 +14,6 @@ public class Task1 {
         });
 
         thread.start();
+        thread.join();
     }
 }
