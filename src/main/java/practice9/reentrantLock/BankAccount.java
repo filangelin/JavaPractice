@@ -3,26 +3,46 @@ package practice9.reentrantLock;
 import java.util.concurrent.locks.ReentrantLock;
 
 public class BankAccount {
+    private final int id;
     private int balance;
     ReentrantLock lock = new ReentrantLock();
 
-    public BankAccount(int sum) {
+    public BankAccount(int id, int sum) {
+        this.id = id;
         balance = sum;
     }
 
     public void transfer(BankAccount account, int sum) {
-        lock.lock();
+        BankAccount first = this;
+        BankAccount second = account;
+
+        if (first.hashCode() > second.hashCode()) {
+            first = account;
+            second = this;
+        }
+
+        first.lock.lock();
         try {
-            if (sum <= balance) {
-                this.balance -= sum;
-                account.balance += sum;
+            second.lock.lock();
+            try {
+                if (sum <= this.balance) {
+                    this.balance -= sum;
+                    account.balance += sum;
+                }
+            } finally {
+                second.lock.unlock();
             }
         } finally {
-            lock.unlock();
+            first.lock.unlock();
         }
     }
 
     public int getBalance() {
         return balance;
+    }
+
+    @Override
+    public int hashCode() {
+        return Integer.hashCode(id);
     }
 }

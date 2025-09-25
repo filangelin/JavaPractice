@@ -2,8 +2,8 @@ package practice9.reentrantLock;
 
 public class Main {
     public static void main(String[] args) throws InterruptedException {
-        BankAccount account1 = new BankAccount(1000);
-        BankAccount account2 = new BankAccount(1000);
+        BankAccount account1 = new BankAccount(1, 1000);
+        BankAccount account2 = new BankAccount(2, 1000);
 
         Thread t1 = new Thread(() -> {
             for (int i = 0; i < 10; i++) {
